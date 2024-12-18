@@ -24,6 +24,26 @@ public class Student {
         this.subjects = new ArrayList<>();
     }
 
+    // 新增：從 JSON 資料設置科目
+    public void addSubjectsFromJson(List<Map<String, Object>> subjectData) {
+        for (Map<String, Object> subjectMap : subjectData) {
+            String subjectName = (String) subjectMap.get("name");
+            String type = (String) subjectMap.get("type");
+            int score = (int) subjectMap.get("score");
+
+            if ("core".equalsIgnoreCase(type)) {
+                CoreSubject coreSubject = new CoreSubject(subjectName);
+                coreSubject.setScore(score);
+                subjects.add(coreSubject);
+            } else if ("elective".equalsIgnoreCase(type)) {
+                double weight = (double) subjectMap.get("weight");
+                ElectiveSubject electiveSubject = new ElectiveSubject(subjectName, weight);
+                electiveSubject.setScore(score);
+                subjects.add(electiveSubject);
+            }
+        }
+    }
+
     public void addSubject(Subject subject) {
         if (subject == null) {
             throw new IllegalArgumentException("Subject cannot be null");
@@ -57,8 +77,6 @@ public class Student {
 
     public String generateReport() {
         StringBuilder report = new StringBuilder();
-        report.append("Grade Report\n");
-        report.append("==============\n");
         report.append(String.format("Name: %s\n", name));
         report.append(String.format("ID: %s\n", id));
         report.append(String.format("Class: %s\n", className));
@@ -74,7 +92,6 @@ public class Student {
         report.append(String.format("Weighted Total Score(加權總分): %.1f\n", calculateTotalScore()));
         report.append(String.format("Weighted Average(加權平均): %.1f\n", calculateAverageScore()));
         report.append(String.format("Class Rank(班級排名): %d\n", rank));
-
         return report.toString();
     }
 

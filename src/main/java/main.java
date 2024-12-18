@@ -13,41 +13,46 @@ public class main {
             GradeManager gradeManager = new GradeManager();
 
             // 從 JSON 檔案匯入學生資料
-            List<Map<String, Object>> studentData = loadStudentsFromJSON("students.json");
-            for (Map<String, Object> studentMap : studentData) {
-                Student student = parseStudent(studentMap);
-                gradeManager.addStudent(student);
+            Map<String, List<Map<String, Object>>> classData = loadClassesFromJSON("students.json");
+            for (String className : classData.keySet()) {
+                List<Map<String, Object>> studentData = classData.get(className);
+                for (Map<String, Object> studentMap : studentData) {
+                    Student student = parseStudent(studentMap, className);
+                    gradeManager.addStudent(className, student);
+                }
             }
 
-            // 輸出成績報告
-            System.out.println(gradeManager.generateClassReport());
+            // 輸出所有班級的成績報告
+            for (String className : gradeManager.getClassNames()) {
+                System.out.println(gradeManager.generateClassReport(className));
+            }
 
-            // 輸出前第一名學生
-            System.out.println("第1名學生:");
-            List<Student> topStudents = gradeManager.getTopStudents(1);
-            for (Student student : topStudents) {
-                System.out.println(student.getName() + ": " +
-                        student.calculateAverageScore());
+            // 輸出每個班級的第一名學生
+            for (String className : gradeManager.getClassNames()) {
+                System.out.println("Class " + className + " 1st:");
+                List<Student> topStudents = gradeManager.getTopStudents(className, 1);
+                for (Student student : topStudents) {
+                    System.out.println(student.getName() + ": " + student.calculateAverageScore() + "(Weighted Average)");
+                }
             }
 
         } catch (Exception e) {
-            System.err.println("錯誤: " + e.getMessage());
+            System.err.println("Error: " + e.getMessage());
         }
     }
 
     // 從 JSON 檔案讀取資料
-    private static List<Map<String, Object>> loadStudentsFromJSON(String filePath) throws Exception {
+    private static Map<String, List<Map<String, Object>>> loadClassesFromJSON(String filePath) throws Exception {
         ObjectMapper objectMapper = new ObjectMapper();
-        return objectMapper.readValue(new File(filePath), List.class);
+        return objectMapper.readValue(new File(filePath), Map.class);
     }
 
-    // 將 JSON 資料解析為 Student 物件
-    private static Student parseStudent(Map<String, Object> studentMap) {
+    // 將 JSON 資料解析為 Student 物件，並將班級名稱加入
+    private static Student parseStudent(Map<String, Object> studentMap, String className) {
         String name = (String) studentMap.get("name");
         String id = (String) studentMap.get("id");
-        String className = (String) studentMap.get("class");
 
-        Student student = new Student(name, id, className);
+        Student student = new Student(name, id, className);  // 確保 Student 構造方法正確
 
         List<Map<String, Object>> subjects = (List<Map<String, Object>>) studentMap.get("subjects");
         for (Map<String, Object> subjectMap : subjects) {
