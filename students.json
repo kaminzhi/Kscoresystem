@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Marven",
+    "id": "S001",
+    "class": "A",
+    "subjects": [
+      {"name": "Mathematics", "type": "core", "score": 90},
+      {"name": "Chinese", "type": "core", "score": 85},
+      {"name": "Music", "type": "elective", "score": 95, "weight": 0.5}
+    ]
+  },
+  {
+    "name": "Keven",
+    "id": "S002",
+    "class": "A",
+    "subjects": [
+      {"name": "Mathematics", "type": "core", "score": 88},
+      {"name": "Chinese", "type": "core", "score": 92},
+      {"name": "Music", "type": "elective", "score": 90, "weight": 0.5}
+    ]
+  },
+  {
+    "name": "Jie Wang",
+    "id": "S003",
+    "class": "A",
+    "subjects": [
+      {"name": "Mathematics", "type": "core", "score": 75},
+      {"name": "Chinese", "type": "core", "score": 80},
+      {"name": "Music", "type": "elective", "score": 85, "weight": 0.5}
+    ]
+  },
+  {
+    "name": "Kamin Chen",
+    "id": "S004",
+    "class": "A",
+    "subjects": [
+      {"name": "Mathematics", "type": "core", "score": 93},
+      {"name": "Chinese", "type": "core", "score": 78},
+      {"name": "Music", "type": "elective", "score": 88, "weight": 0.5}
+    ]
+  },
+  {
+    "name": "Joe lin",
+    "id": "S005",
+    "class": "A",
+    "subjects": [
+      {"name": "Mathematics", "type": "core", "score": 82},
+      {"name": "Chinese", "type": "core", "score": 87},
+      {"name": "Music", "type": "elective", "score": 89, "weight": 0.5}
+    ]
+  },
+  {
+    "name": "Brian Tom",
+    "id": "S006",
+    "class": "A",
+    "subjects": [
+      {"name": "Mathematics", "type": "core", "score": 95},
+      {"name": "Chinese", "type": "core", "score": 92},
+      {"name": "Music", "type": "elective", "score": 91, "weight": 0.5}
+    ]
+  },
+  {
+    "name": "Henny Jane",
+    "id": "S007",
+    "class": "A",
+    "subjects": [
+      {"name": "Mathematics", "type": "core", "score": 78},
+      {"name": "Chinese", "type": "core", "score": 84},
+      {"name": "Music", "type": "elective", "score": 86, "weight": 0.5}
+    ]
+  },
+  {
+    "name": "Walson Jie",
+    "id": "S008",
+    "class": "A",
+    "subjects": [
+      {"name": "Mathematics", "type": "core", "score": 88},
+      {"name": "Chinese", "type": "core", "score": 91},
+      {"name": "Music", "type": "elective", "score": 89, "weight": 0.5}
+    ]
+  },
+  {
+    "name": "Jimmy Lin",
+    "id": "S009",
+    "class": "A",
+    "subjects": [
+      {"name": "Mathematics", "type": "core", "score": 76},
+      {"name": "Chinese", "type": "core", "score": 80},
+      {"name": "Music", "type": "elective", "score": 85, "weight": 0.5}
+    ]
+  },
+  {
+    "name": "Peter Paker",
+    "id": "S010",
+    "class": "A",
+    "subjects": [
+      {"name": "Mathematics", "type": "core", "score": 92},
+      {"name": "Chinese", "type": "core", "score": 88},
+      {"name": "Music", "type": "elective", "score": 90, "weight": 0.5}
+    ]
+  }
+]
