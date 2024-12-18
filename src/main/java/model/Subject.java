@@ -1,4 +1,6 @@
 package model;
+import java.util.List;
+
 
 public abstract class Subject {
     private String name;
@@ -30,4 +32,6 @@ public abstract class Subject {
     }
 
     public abstract double calculateWeightedScore();
+
+
 }

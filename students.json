@@ -6,7 +6,10 @@
       "subjects": [
         { "name": "Mathematics", "type": "core", "score": 90 },
         { "name": "Chinese", "type": "core", "score": 85 },
-        { "name": "Music", "type": "elective", "score": 95, "weight": 0.5 }
+        { "name": "Music", "type": "elective", "score": 95, "weight": 0.5 },
+        { "name": "English", "type": "core", "score": 88 },
+        { "name": "Computer", "type": "elective", "score": 80, "weight": 0.6 },
+        { "name": "Science", "type": "core", "score": 92 }
       ]
     },
     {
@@ -15,7 +18,10 @@
       "subjects": [
         { "name": "Mathematics", "type": "core", "score": 88 },
         { "name": "Chinese", "type": "core", "score": 92 },
-        { "name": "Music", "type": "elective", "score": 90, "weight": 0.5 }
+        { "name": "Music", "type": "elective", "score": 90, "weight": 0.5 },
+        { "name": "English", "type": "core", "score": 84 },
+        { "name": "Computer", "type": "elective", "score": 75, "weight": 0.6 },
+        { "name": "Science", "type": "core", "score": 85 }
       ]
     },
     {
@@ -24,18 +30,22 @@
       "subjects": [
         { "name": "Mathematics", "type": "core", "score": 75 },
         { "name": "Chinese", "type": "core", "score": 80 },
-        { "name": "Music", "type": "elective", "score": 85, "weight": 0.5 }
+        { "name": "Music", "type": "elective", "score": 85, "weight": 0.5 },
+        { "name": "English", "type": "core", "score": 80 },
+        { "name": "Computer", "type": "elective", "score": 78, "weight": 0.6 },
+        { "name": "Science", "type": "core", "score": 76 }
       ]
-    }
-  ],
-  "B": [
+    },
     {
       "name": "Alice",
       "id": "S004",
       "subjects": [
         { "name": "Mathematics", "type": "core", "score": 93 },
         { "name": "Chinese", "type": "core", "score": 78 },
-        { "name": "Music", "type": "elective", "score": 88, "weight": 0.5 }
+        { "name": "Music", "type": "elective", "score": 88, "weight": 0.5 },
+        { "name": "English", "type": "core", "score": 85 },
+        { "name": "Computer", "type": "elective", "score": 92, "weight": 0.6 },
+        { "name": "Science", "type": "core", "score": 90 }
       ]
     },
     {
@@ -44,7 +54,10 @@
       "subjects": [
         { "name": "Mathematics", "type": "core", "score": 82 },
         { "name": "Chinese", "type": "core", "score": 87 },
-        { "name": "Music", "type": "elective", "score": 89, "weight": 0.5 }
+        { "name": "Music", "type": "elective", "score": 89, "weight": 0.5 },
+        { "name": "English", "type": "core", "score": 80 },
+        { "name": "Computer", "type": "elective", "score": 77, "weight": 0.6 },
+        { "name": "Science", "type": "core", "score": 79 }
       ]
     },
     {
@@ -53,18 +66,22 @@
       "subjects": [
         { "name": "Mathematics", "type": "core", "score": 95 },
         { "name": "Chinese", "type": "core", "score": 92 },
-        { "name": "Music", "type": "elective", "score": 91, "weight": 0.5 }
+        { "name": "Music", "type": "elective", "score": 91, "weight": 0.5 },
+        { "name": "English", "type": "core", "score": 85 },
+        { "name": "Computer", "type": "elective", "score": 88, "weight": 0.6 },
+        { "name": "Science", "type": "core", "score": 93 }
       ]
-    }
-  ],
-  "C": [
+    },
     {
       "name": "David",
       "id": "S007",
       "subjects": [
         { "name": "Mathematics", "type": "core", "score": 78 },
         { "name": "Chinese", "type": "core", "score": 84 },
-        { "name": "Music", "type": "elective", "score": 86, "weight": 0.5 }
+        { "name": "Music", "type": "elective", "score": 86, "weight": 0.5 },
+        { "name": "English", "type": "core", "score": 87 },
+        { "name": "Computer", "type": "elective", "score": 75, "weight": 0.6 },
+        { "name": "Science", "type": "core", "score": 82 }
       ]
     },
     {
@@ -73,7 +90,10 @@
       "subjects": [
         { "name": "Mathematics", "type": "core", "score": 88 },
         { "name": "Chinese", "type": "core", "score": 91 },
-        { "name": "Music", "type": "elective", "score": 89, "weight": 0.5 }
+        { "name": "Music", "type": "elective", "score": 89, "weight": 0.5 },
+        { "name": "English", "type": "core", "score": 93 },
+        { "name": "Computer", "type": "elective", "score": 80, "weight": 0.6 },
+        { "name": "Science", "type": "core", "score": 88 }
       ]
     },
     {
@@ -82,7 +102,146 @@
       "subjects": [
         { "name": "Mathematics", "type": "core", "score": 76 },
         { "name": "Chinese", "type": "core", "score": 80 },
-        { "name": "Music", "type": "elective", "score": 85, "weight": 0.5 }
+        { "name": "Music", "type": "elective", "score": 85, "weight": 0.5 },
+        { "name": "English", "type": "core", "score": 78 },
+        { "name": "Computer", "type": "elective", "score": 76, "weight": 0.6 },
+        { "name": "Science", "type": "core", "score": 79 }
+      ]
+    }
+  ],
+  "B": [
+    {
+      "name": "Grace",
+      "id": "S010",
+      "subjects": [
+        { "name": "Mathematics", "type": "core", "score": 85 },
+        { "name": "Chinese", "type": "core", "score": 91 },
+        { "name": "Music", "type": "elective", "score": 94, "weight": 0.5 },
+        { "name": "English", "type": "core", "score": 81 },
+        { "name": "Computer", "type": "elective", "score": 79, "weight": 0.6 },
+        { "name": "Science", "type": "core", "score": 83 }
+      ]
+    },
+    {
+      "name": "Hannah",
+      "id": "S011",
+      "subjects": [
+        { "name": "Mathematics", "type": "core", "score": 90 },
+        { "name": "Chinese", "type": "core", "score": 84 },
+        { "name": "Music", "type": "elective", "score": 89, "weight": 0.5 },
+        { "name": "English", "type": "core", "score": 80 },
+        { "name": "Computer", "type": "elective", "score": 76, "weight": 0.6 },
+        { "name": "Science", "type": "core", "score": 77 }
+      ]
+    },
+    {
+      "name": "Ivy",
+      "id": "S012",
+      "subjects": [
+        { "name": "Mathematics", "type": "core", "score": 82 },
+        { "name": "Chinese", "type": "core", "score": 75 },
+        { "name": "Music", "type": "elective", "score": 86, "weight": 0.5 },
+        { "name": "English", "type": "core", "score": 90 },
+        { "name": "Computer", "type": "elective", "score": 92, "weight": 0.6 },
+        { "name": "Science", "type": "core", "score": 84 }
+      ]
+    }
+  ],
+  "C": [
+    {
+      "name": "John",
+      "id": "S013",
+      "subjects": [
+        { "name": "Mathematics", "type": "core", "score": 78 },
+        { "name": "Chinese", "type": "core", "score": 80 },
+        { "name": "Music", "type": "elective", "score": 82, "weight": 0.5 },
+        { "name": "English", "type": "core", "score": 91 },
+        { "name": "Computer", "type": "elective", "score": 84, "weight": 0.6 },
+        { "name": "Science", "type": "core", "score": 80 }
+      ]
+    },
+    {
+      "name": "Kelly",
+      "id": "S014",
+      "subjects": [
+        { "name": "Mathematics", "type": "core", "score": 88 },
+        { "name": "Chinese", "type": "core", "score": 79 },
+        { "name": "Music", "type": "elective", "score": 91, "weight": 0.5 },
+        { "name": "English", "type": "core", "score": 89 },
+        { "name": "Computer", "type": "elective", "score": 85, "weight": 0.6 },
+        { "name": "Science", "type": "core", "score": 93 }
+      ]
+    },
+    {
+      "name": "Liam",
+      "id": "S015",
+      "subjects": [
+        { "name": "Mathematics", "type": "core", "score": 85 },
+        { "name": "Chinese", "type": "core", "score": 83 },
+        { "name": "Music", "type": "elective", "score": 92, "weight": 0.5 },
+        { "name": "English", "type": "core", "score": 80 },
+        { "name": "Computer", "type": "elective", "score": 78, "weight": 0.6 },
+        { "name": "Science", "type": "core", "score": 81 }
+      ]
+    },
+    {
+      "name": "Mia",
+      "id": "S016",
+      "subjects": [
+        { "name": "Mathematics", "type": "core", "score": 79 },
+        { "name": "Chinese", "type": "core", "score": 84 },
+        { "name": "Music", "type": "elective", "score": 87, "weight": 0.5 },
+        { "name": "English", "type": "core", "score": 83 },
+        { "name": "Computer", "type": "elective", "score": 90, "weight": 0.6 },
+        { "name": "Science", "type": "core", "score": 88 }
+      ]
+    },
+    {
+      "name": "Nathan",
+      "id": "S017",
+      "subjects": [
+        { "name": "Mathematics", "type": "core", "score": 92 },
+        { "name": "Chinese", "type": "core", "score": 76 },
+        { "name": "Music", "type": "elective", "score": 91, "weight": 0.5 },
+        { "name": "English", "type": "core", "score": 90 },
+        { "name": "Computer", "type": "elective", "score": 83, "weight": 0.6 },
+        { "name": "Science", "type": "core", "score": 85 }
+      ]
+    },
+    {
+      "name": "Olivia",
+      "id": "S018",
+      "subjects": [
+        { "name": "Mathematics", "type": "core", "score": 81 },
+        { "name": "Chinese", "type": "core", "score": 80 },
+        { "name": "Music", "type": "elective", "score": 85, "weight": 0.5 },
+        { "name": "English", "type": "core", "score": 88 },
+        { "name": "Computer", "type": "elective", "score": 91, "weight": 0.6 },
+        { "name": "Science", "type": "core", "score": 84 }
+      ]
+    },
+    {
+      "name": "Paul",
+      "id": "S019",
+      "subjects": [
+        { "name": "Mathematics", "type": "core", "score": 88 },
+        { "name": "Chinese", "type": "core", "score": 82 },
+        { "name": "Music", "type": "elective", "score": 93, "weight": 0.5 },
+        { "name": "English", "type": "core", "score": 81 },
+        { "name": "Computer", "type": "elective", "score": 79, "weight": 0.6 },
+        { "name": "Science", "type": "core", "score": 86 }
+      ]
+    },
+    {
+      "name": "Quincy",
+      "id": "S020",
+      "subjects": [
+        { "name": "Mathematics", "type": "core", "score": 91 },
+        { "name": "Chinese", "type": "core", "score": 80 },
+        { "name": "Music", "type": "elective", "score": 90, "weight": 0.5 },
+        { "name": "English", "type": "core", "score": 93 },
+        { "name": "Computer", "type": "elective", "score": 85, "weight": 0.6 },
+        { "name": "Science", "type": "core", "score": 87 }
       ]
     }
   ]

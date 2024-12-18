@@ -1,6 +1,12 @@
 package service;
 
 import model.Student;
+import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.*;
 
 public class GradeManager {
@@ -109,6 +115,13 @@ public class GradeManager {
 
     public List<String> getClassNames() {
         return new ArrayList<>(classStudentsMap.keySet());
+    }
+    public List<Student> getAllStudents() {
+        List<Student> allStudents = new ArrayList<>();
+        for (String className : getClassNames()) {
+            allStudents.addAll(getStudents(className));
+        }
+        return allStudents;
     }
 
 }

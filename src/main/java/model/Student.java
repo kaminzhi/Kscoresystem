@@ -24,6 +24,7 @@ public class Student {
         this.subjects = new ArrayList<>();
     }
 
+
     // 新增：從 JSON 資料設置科目
     public void addSubjectsFromJson(List<Map<String, Object>> subjectData) {
         for (Map<String, Object> subjectMap : subjectData) {
@@ -82,6 +83,7 @@ public class Student {
         report.append(String.format("Class: %s\n", className));
         report.append("Subject Grade:\n");
 
+        // Loop through the subjects and output them
         for (Subject subject : subjects) {
             report.append(String.format("- %s: %.1f (weight[權重]: %.1f)\n",
                     subject.getName(),
@@ -94,6 +96,7 @@ public class Student {
         report.append(String.format("Class Rank(班級排名): %d\n", rank));
         return report.toString();
     }
+
 
     public String getName() {
         return name;
@@ -113,5 +116,21 @@ public class Student {
 
     public int getRank() {
         return rank;
+    }
+
+    public double calculateWeightedAverage() {
+        if (subjects.isEmpty()) {
+            return 0.0;
+        }
+
+        double totalScore = 0;
+        double totalWeight = 0;
+
+        for (Subject subject : subjects) {
+            totalScore += subject.getScore() * subject.getWeight();
+            totalWeight += subject.getWeight();
+        }
+
+        return totalWeight == 0 ? 0.0 : totalScore / totalWeight;
     }
 }
