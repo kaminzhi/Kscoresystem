@@ -85,6 +85,11 @@ Each class will have its own worksheet with the following columns:
 | 1    | John Doe     | S12345     | 85   | 90      | 87.5             |
 | 2    | Jane Smith   | S67890     | 78   | 88      | 83.0             |
 
+#### Command Output
+![image](./asset/cli(1).png)
+![image](./asset/cli(2).png)
+
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
