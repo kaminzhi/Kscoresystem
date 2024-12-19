@@ -33,8 +33,8 @@ public class main {
                 System.out.println("Class " + className + " 1st:");
                 List<Student> topStudents = gradeManager.getTopStudents(className, 1);
                 for (Student student : topStudents) {
-                    System.out.println(student.getName() + ": " +
-                            student.calculateAverageScore() + " (Weighted Average)");
+                    String Top1stscore = String.format("%.2f",student.calculateAverageScore());
+                    System.out.println(student.getName() + ": " + Top1stscore + " (Weighted Average)");
                 }
             }
 
