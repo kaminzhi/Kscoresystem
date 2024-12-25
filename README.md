@@ -2,6 +2,22 @@
 
 This project is a grade management system that processes student data, calculates weighted scores, and generates a report in Excel format. The system reads student data from a JSON file, processes the grades, and exports the results to an Excel file, categorized by class.
 
+## Project Structure
+```
+Kscoresystem/
+   src/
+    └── main/
+        └── java/
+            ├── main.java
+            ├── model/
+            │   ├── CoreSubject.java
+            │   ├── ElectiveSubject.java
+            │   └── Student.java
+            └── service/
+                ├── ExcelExporter.java
+                └── GradeManager.java
+```
+
 ## Features
 - **Load Student Data**: Import student data from a JSON file.
   - **Subject Management**: Each student has core and elective subjects with scores and weights.
